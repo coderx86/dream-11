@@ -1,0 +1,8 @@
+.backImg {
+    background-image: url('../../assets/bg-shadow.png');
+    object-fit: cover;
+    width: 100%;
+    height: 545px;
+    background-repeat: no-repeat;
+    background-color: black;
+}
