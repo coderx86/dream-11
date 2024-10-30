@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Banner></Banner>
+      <div className="w-[85%] mx-auto ">
+        <Banner></Banner>
+      </div>
     </>
   )
 }
