@@ -1,0 +1,122 @@
+[
+    {
+      "playerId": 1,
+      "name": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/jh4KjqQ/smiling-shakib-al-hasan-bangladesh-during-icc-440nw-10320204cc.jpg",
+      "role": "All-Rounder",
+      "battingType": "Left-handed",
+      "bowlingType": "Slow left-arm orthodox",
+      "biddingPrice": 500000
+    },
+    {
+      "playerId": 2,
+      "name": "Tamim Iqbal",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/K9Rz0Zh/Tamim-Iqbal-theincap.webp",
+      "role": "Batsman",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm off-break",
+      "biddingPrice": 300000
+    },
+    {
+      "playerId": 3,
+      "name": "Mushfiqur Rahim",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/j57LmGQ/114467816.webp",
+      "role": "Wicketkeeper-Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "None",
+      "biddingPrice": 350000
+    },
+    {
+      "playerId": 4,
+      "name": "Mustafizur Rahman",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/z2csGmh/383539.webp",
+      "role": "Bowler",
+      "battingType": "Left-handed",
+      "bowlingType": "Left-arm fast-medium",
+      "biddingPrice": 450000
+    },
+    {
+      "playerId": 5,
+      "name": "Mahmudullah Riyad",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/YN3zvPN/217762-148.jpg",
+      "role": "All-Rounder",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm off-break",
+      "biddingPrice": 320000
+    },
+    {
+      "playerId": 6,
+      "name": "Liton Das",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/C0NKzWp/images.jpg",
+      "role": "Wicketkeeper-Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "None",
+      "biddingPrice": 275000
+    },
+    {
+      "playerId": 7,
+      "name": "Taskin Ahmed",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/Wk3SWPN/images-1.jpg",
+      "role": "Bowler",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 400000
+    },
+    {
+      "playerId": 8,
+      "name": "Soumya Sarkar",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/sVYx1xN/381492.webp",
+      "role": "All-Rounder",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm medium",
+      "biddingPrice": 250000
+    },
+    {
+      "playerId": 9,
+      "name": "Mehidy Hasan Miraz",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/94dvgw5/images-2.jpg",
+      "role": "All-Rounder",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm off-break",
+      "biddingPrice": 350000
+    },
+    {
+      "playerId": 10,
+      "name": "Mohammad Saifuddin",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/qgpPX5V/the-27-year-old-revealed-that-he-is-suffering-from-depression.webp",
+      "role": "All-Rounder",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm medium-fast",
+      "biddingPrice": 300000
+    },
+    {
+      "playerId": 11,
+      "name": "Afif Hossain",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/GCY5cdf/afif-hossain-has-been-left-out-of-the-bangladesh-squad-for-the-t20i-series-against-ireland.webp",
+      "role": "All-Rounder",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm off-break",
+      "biddingPrice": 220000
+    },
+    {
+      "playerId": 12,
+      "name": "Nasum Ahmed",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/m0Bfdsx/356498.webp",
+      "role": "Bowler",
+      "battingType": "Left-handed",
+      "bowlingType": "Slow left-arm orthodox",
+      "biddingPrice": 200000
+    }
+  ]

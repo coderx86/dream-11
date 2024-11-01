@@ -3,7 +3,7 @@ import coin from '../../assets/coin.png'
 
 const Header = () => {
     return (
-        <div className='sticky top-0 z-50 shadow-md bg-white/30 backdrop-blur-sm mt-12 pb-6'>
+        <div className='sticky top-0 z-10 shadow-md bg-white/30 backdrop-blur-sm mt-12 pb-6'>
             <div className='w-[85%] mx-auto flex justify-between items-center '>
                 <img className='' src={logo}/>
                 <div className='flex gap-11 items-center'>
