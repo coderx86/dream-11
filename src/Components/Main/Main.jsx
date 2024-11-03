@@ -2,9 +2,8 @@ import { useState } from "react";
 import Players from "../Players/Players";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
-const Main = () => {
+const Main = ({ addPlayers, players, removePlayer }) => {
     const [isActive, setisActive] = useState(true);
-    
     return (
         <div>
             <div className="flex justify-between items-center text-center mb-8 sticky top-24 z-50">
@@ -19,7 +18,7 @@ const Main = () => {
                     onClick={() => setisActive(false)} 
                     className={`border-gray-300 border-l-0 border-[1px] px-7 py-3 rounded-r-xl 
                     ${!isActive ? 'bg-[#E7FE29] font-bold' : 'bg-white'}`}>
-                        Selected (0)
+                        Selected ({players.length})
                     </button>
                 </div>
             </div>
@@ -27,14 +26,18 @@ const Main = () => {
             className={`
                 ${!isActive? 'hidden' : 'block'}
                 `}>
-                <Players></Players>
+                <Players addPlayers={addPlayers}></Players>
             </div>
             <div
              className={`
                 ${isActive? 'hidden' : 'block'}
                 `}
             >
-                <SelectedPlayers></SelectedPlayers>
+                <SelectedPlayers
+                players={players}
+                removePlayer={removePlayer}
+                >
+                </SelectedPlayers>
             </div>
         </div>
     );

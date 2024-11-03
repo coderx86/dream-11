@@ -1,7 +1,7 @@
 import logo from '../../assets/logo.png';
 import coin from '../../assets/coin.png'
 
-const Header = () => {
+const Header = ({ balance }) => {
     return (
         <div className='sticky top-0 z-10 shadow-md bg-white/30 backdrop-blur-sm mt-12 pb-6'>
             <div className='w-[85%] mx-auto flex justify-between items-center '>
@@ -15,7 +15,7 @@ const Header = () => {
                     </ul>
                     <div>
                         <button className='flex gap-2 border-[#1313131a] border-2 rounded-xl px-5 py-4'>
-                            <h2 className='font-semibold text-[#131313b3]'>0 Coin</h2>
+                            <h2 className='font-semibold text-[#131313b3]'>{balance} Coin</h2>
                             <img src={coin} alt="" />
                         </button>
                     </div>

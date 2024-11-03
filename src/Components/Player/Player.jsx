@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import { FaFlag } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 
-const Player = ({ player }) => {
-    const {name, country, image, role, battingType, bowlingType, biddingPrice} = player
+const Player = ({ player, addPlayers }) => {
+    const {playerId, name, country, image, role, battingType, bowlingType, biddingPrice} = player;
     return (
         <div className='p-6 border-[1px] rounded-2xl'>
             <div><img className='rounded-2xl w-full aspect-[376/240] object-cover mb-6' src={image} alt="" /></div>
@@ -24,7 +24,9 @@ const Player = ({ player }) => {
                     </div>
                     <div className='text-center'>
                         <p className='text-[#131313b3] mb-4'>{bowlingType}</p>
-                        <button className='border-[1px] rounded-lg px-4 py-2'>Choose Player</button>
+                        <button 
+                        onClick={()=>addPlayers(player)}
+                        className='border-[1px] rounded-lg px-4 py-2'>Choose Player</button>
                     </div>
                 </div>
             </div>
@@ -32,7 +34,8 @@ const Player = ({ player }) => {
     );
 };
 Player.propTypes = {
-    player: PropTypes.object.isRequired
+    player: PropTypes.object.isRequired,
+    addPlayers: PropTypes.func,
 };
 
 export default Player;
