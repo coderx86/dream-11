@@ -2,21 +2,64 @@ import { useState } from "react"
 import Banner from "./Components/Banner/Banner"
 import Navbar from "./Components/Header/Navbar"
 import Main from "./Components/Main/Main"
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [players, setplayers] =useState([]);
   const [balance, setbalance]= useState(0);
   const addPlayers = (player) => {
     if (player.biddingPrice > balance) {
-      alert("Not enough balance! Please claim free credit first.");
+      toast.error('Not enough balance! Please claim free credit first.', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+        });
       return;
   }
     if (players.find(p => p.playerId === player.playerId)) {
-        alert("This player has already been selected!");
+      toast.error('Player already selected', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+        });
     } else if (players.length >= 6) {
-        alert("You can only select up to 6 players.");
+      toast.error('Sorry! You can only select up to 6 players.', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+        });
     } else {
       setplayers([...players, player]);
+      toast.success(`Congrates !! ${player.name} is now your squad.`, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+        });
       const newBalance = balance - player.biddingPrice;
       setbalance(newBalance);
     }
@@ -25,12 +68,34 @@ function App() {
   const removePlayer = (playerId, biddingPrice) => {
     const updatedPlayers = players.filter(player => player.playerId !== playerId);
     setplayers(updatedPlayers);
+    toast.warn('Player removed!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+      });
     const upDatedBal = balance + biddingPrice;
     setbalance(upDatedBal);
   };
 
   const toHandler = () => {
   setbalance((prevBalance) => prevBalance + 600000);
+  toast.success(`Successfully credited 600,000 coins to your balance.`, {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    transition: Bounce,
+    });
   };
 
   return (
@@ -43,6 +108,7 @@ function App() {
         players={players}
         removePlayer={removePlayer}></Main>
       </div>
+      <ToastContainer />
     </>
   )
 }

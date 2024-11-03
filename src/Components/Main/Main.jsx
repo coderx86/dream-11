@@ -4,6 +4,10 @@ import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
 const Main = ({ addPlayers, players, removePlayer }) => {
     const [isActive, setisActive] = useState(true);
+    const addMorePlayer=()=>{
+        setisActive(true);
+        console.log("clicked")
+    };
     return (
         <div>
             <div className="flex justify-between items-center text-center mb-8 sticky top-24 z-50">
@@ -36,6 +40,7 @@ const Main = ({ addPlayers, players, removePlayer }) => {
                 <SelectedPlayers
                 players={players}
                 removePlayer={removePlayer}
+                addMorePlayer={addMorePlayer}
                 >
                 </SelectedPlayers>
             </div>
