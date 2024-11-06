@@ -26,7 +26,7 @@ const SelectedPlayer = ({ player, removePlayer }) => {
 };
 
 SelectedPlayer.propTypes = {
-    player: PropTypes.array,
+    player: PropTypes.object,
     removePlayer: PropTypes.func
 };
 

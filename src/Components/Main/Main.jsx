@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Players from "../Players/Players";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
+import PropTypes from 'prop-types';
 
 const Main = ({ addPlayers, players, removePlayer }) => {
     const [isActive, setisActive] = useState(true);
@@ -9,7 +10,7 @@ const Main = ({ addPlayers, players, removePlayer }) => {
         console.log("clicked")
     };
     return (
-        <div>
+        <div className="mb-[350px]">
             <div className="flex justify-between items-center text-center mb-8 sticky top-24 z-50">
                 <h2 className="text-3xl font-bold">Available Players</h2>
                 <div className="">
@@ -30,7 +31,10 @@ const Main = ({ addPlayers, players, removePlayer }) => {
             className={`
                 ${!isActive? 'hidden' : 'block'}
                 `}>
-                <Players addPlayers={addPlayers}></Players>
+                <Players 
+                addPlayers={addPlayers}
+                >
+                </Players>
             </div>
             <div
              className={`
@@ -47,5 +51,11 @@ const Main = ({ addPlayers, players, removePlayer }) => {
         </div>
     );
 };
+
+Main.propTypes = {
+    addPlayers: PropTypes.func,
+    players: PropTypes.array,
+    removePlayer: PropTypes.func
+}
 
 export default Main;

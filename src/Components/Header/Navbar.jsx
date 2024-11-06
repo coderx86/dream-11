@@ -1,5 +1,6 @@
 import logo from '../../assets/logo.png';
-import coin from '../../assets/coin.png'
+import coin from '../../assets/coin.png';
+import PropTypes from 'prop-types';
 
 const Header = ({ balance }) => {
     return (
@@ -23,6 +24,10 @@ const Header = ({ balance }) => {
             </div>
         </div>
     );
+};
+
+Header.propTypes = {
+    balance: PropTypes.number
 };
 
 export default Header;

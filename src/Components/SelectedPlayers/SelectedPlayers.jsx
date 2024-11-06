@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import SelectedPlayer from '../../SelectedPlayer/SelectedPlayer';
 
 const SelectedPlayers = ({ players, removePlayer, addMorePlayer }) => {
-    console.log(players)
     return (
         <div>
             <div className='flex flex-col gap-6'>

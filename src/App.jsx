@@ -4,6 +4,7 @@ import Navbar from "./Components/Header/Navbar"
 import Main from "./Components/Main/Main"
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [players, setplayers] =useState([]);
@@ -108,6 +109,7 @@ function App() {
         players={players}
         removePlayer={removePlayer}></Main>
       </div>
+      <Footer></Footer>
       <ToastContainer />
     </>
   )
