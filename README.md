@@ -14,7 +14,7 @@ BPL-DREAM 11 is a cricket bidding site where users can assemble their ultimate D
 -   **Validation and Notification System**: The app uses React-Toastify for user alerts, validating conditions like coin balance, duplicate selections, and a maximum limit of six selected players.
 
 ## Project live link🔗
-[BPL-DREAM 11 (assignment-07-sdx86.netlify.app) ](https://assignment-07-sdx86.netlify.app/)
+[BPL-DREAM 11](https://assignment-07-sdx86.netlify.app/)
 Page with Available Players
 ![Page with Available Players](https://images2.imgbox.com/49/5d/Focuk8Dz_o.jpeg)
 Page with Selected Players
